@@ -6,6 +6,6 @@ struct Heap {
     Heap(int val);
 
     void insert(int val);
-    void remove(int val);
+    void pop();
     int top();
 };
