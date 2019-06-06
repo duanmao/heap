@@ -1,11 +1,16 @@
 #include <vector>
 using namespace std;
 
-struct Heap {
+class Heap {
+private:
     vector<int> values;
-    Heap(int val);
+    void sift_up();
+    void sift_down();
 
-    void insert(int val);
+public:
+    Heap();
+    Heap(vector<int> vals);
+    void push(int val);
     void pop();
     int top();
 };
